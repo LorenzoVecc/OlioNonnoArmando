@@ -10,12 +10,11 @@
     
     <!-- Open Graph / Social Media & WhatsApp Preview -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lorenzovecc.github.io/OlioNonnoArmando/">
+    <meta property="og:url" content="https://oliosantavenere.netlify.app/">
     <meta property="og:title" content="Olio Santa Venere | L'Eredità di Nonno Armando">
     <meta property="og:description" content="Olio Santa Venere: olio extra vergine artigianale e premium. Scopri l'eccellenza che nasce a Zinga.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/LorenzoVecc/OlioNonnoArmando/main/cover.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
+    <meta property="og:image" content="https://oliosantavenere.netlify.app/storia-produzione.jpeg">
+    <meta property="og:image:type" content="image/jpeg">
     
     <!-- Video Preload & Resource Hints -->
     <link rel="preload" as="image" href="https://res.cloudinary.com/dtao2wba5/video/upload/f_auto,q_auto/v1773505152/1773504993231258_zj6efv.jpg" fetchpriority="high">
@@ -45,8 +44,9 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#come-lavoriamo" class="nav-link">Come Lavoriamo</a></li>
                     <li><a href="#storia" class="nav-link">Chi Siamo</a></li>
-                    <li><a href="#video-secondario" class="nav-link">Il Raccolto</a></li>
+                    <li><a href="#prezzi" class="nav-link">Prezzi</a></li>
                     <li><a href="#contatti" class="nav-link btn-nav"><i class="fa-brands fa-whatsapp"></i> Contattaci</a></li>
                 </ul>
             </nav>
@@ -60,14 +60,60 @@
                 <span class="hero-legacy reveal">L'Eredità di Nonno Armando</span>
                 <h1 class="hero-title-dark">Olio <span class="brand-name">Santa Venere</span></h1>
                 <p class="hero-subtitle-dark">Eccellenza di Zinga, nel cuore della <strong>Calabria</strong>.</p>
-                <div class="video-container"> <!-- Removed reveal for mobile instant visibility -->
-                    <button class="audio-toggle-btn" aria-label="Attiva Audio" data-video-target="heroVideo">
-                        <i class="fa-solid fa-volume-xmark"></i> Audio
-                    </button>
-                    <video id="heroVideo" autoplay loop muted playsinline crossorigin="anonymous" class="video-large" poster="https://res.cloudinary.com/dtao2wba5/video/upload/f_auto,q_auto/v1773505152/1773504993231258_zj6efv.jpg" preload="auto">
-                        <source src="https://res.cloudinary.com/dtao2wba5/video/upload/f_auto,q_auto/v1773505152/1773504993231258_zj6efv.mp4" type="video/mp4">
-                        Il tuo browser non supporta i video HTML5.
-                    </video>
+                
+                <div class="hero-image-container reveal">
+                    <img src="nonno-armando-logo.jpeg" alt="Olio Santa Venere - L'Eredità di Nonno Armando" class="hero-logo-img">
+                </div>
+                
+                <div class="hero-cta reveal">
+                    <p class="hero-cta-text">Contattaci per riservare la tua bottiglia. Produzione limitata.</p>
+                    <div class="hero-cta-actions">
+                        <a href="https://wa.me/393514470333" target="_blank" class="btn btn-whatsapp-hero">
+                            <i class="fa-brands fa-whatsapp"></i> Contattaci su WhatsApp
+                        </a>
+                        <a href="tel:+393514470333" class="phone-link-hero">
+                            <i class="fa-solid fa-phone"></i> +39 351 447 0333
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Come Lavoriamo (Video Affiancati) -->
+        <section id="come-lavoriamo" class="section section-light">
+            <div class="container text-center reveal">
+                <span class="eyebrow">Il Nostro Lavoro</span>
+                <h2 class="section-title">Come Lavoriamo: Dalla Terra al Frantoio</h2>
+                <p class="section-subtitle">Seguiamo ogni fase con passione e dedizione, combinando tradizione artigianale e cura.</p>
+                
+                <div class="videos-grid">
+                    <!-- Video 1: La Molitura -->
+                    <div class="video-card">
+                        <h3 class="video-card-title"><i class="fa-solid fa-gears"></i> La Molitura a Freddo</h3>
+                        <div class="video-wrapper">
+                            <button class="audio-toggle-btn" aria-label="Attiva Audio" data-video-target="heroVideo">
+                                <i class="fa-solid fa-volume-xmark"></i> Audio
+                            </button>
+                            <video id="heroVideo" autoplay loop muted playsinline crossorigin="anonymous" class="video-grid-item" poster="https://res.cloudinary.com/dtao2wba5/video/upload/f_auto,q_auto/v1773505152/1773504993231258_zj6efv.jpg" preload="auto">
+                                <source src="https://res.cloudinary.com/dtao2wba5/video/upload/f_auto,q_auto/v1773505152/1773504993231258_zj6efv.mp4" type="video/mp4">
+                                Il tuo browser non supporta i video HTML5.
+                            </video>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 2: Il Raccolto -->
+                    <div class="video-card">
+                        <h3 class="video-card-title"><i class="fa-solid fa-hand-holding-hand"></i> La Raccolta Manuale</h3>
+                        <div class="video-wrapper">
+                            <button class="audio-toggle-btn" aria-label="Attiva Audio" data-video-target="secondaryVideo">
+                                <i class="fa-solid fa-volume-xmark"></i> Audio
+                            </button>
+                            <video id="secondaryVideo" autoplay loop muted playsinline crossorigin="anonymous" class="video-grid-item" poster="https://res.cloudinary.com/dtao2wba5/video/upload/f_auto,q_auto/v1773504689/WhatsApp_Video_2026-03-12_at_21.01.50_2_vgzuh8.jpg" preload="metadata">
+                                <source src="https://res.cloudinary.com/dtao2wba5/video/upload/f_auto,q_auto/v1773504689/WhatsApp_Video_2026-03-12_at_21.01.50_2_vgzuh8.mp4" type="video/mp4">
+                                Il tuo browser non supporta i video HTML5.
+                            </video>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -105,55 +151,93 @@
                     </p>
                 </div>
 
-                <!-- Colonna Features -->
-                <div class="features-column reveal reveal-right">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-leaf"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h3>100% Naturale</h3>
-                            <p>Senza l'uso di agenti chimici, preservando la purezza della terra di Zinga.</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-hand-holding-hand"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h3>Raccolta Manuale</h3>
-                            <p>Rispettiamo ogni singola oliva, garantendo la massima cura della pianta.</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa-solid fa-temperature-arrow-down"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h3>Spremitura a Freddo</h3>
-                            <p>Molitura artigianale con macine in pietra per esaltare sapore e profumi.</p>
-                        </div>
+                <!-- Colonna Infografica/Immagine -->
+                <div class="infographic-column reveal reveal-right">
+                    <div class="infographic-card anim-hover">
+                        <img src="storia-produzione.jpeg" alt="La Nostra Storia e Produzione" class="storia-img">
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- Sezione Video Secondario -->
-        <section id="video-secondario" class="section section-light">
-            <div class="container text-center reveal">
-                <span class="eyebrow">Il Nostro Lavoro</span>
-                <h2 class="section-title">L'Eccellenza sul Campo</h2>
-                <div class="video-container">
-                    <button class="audio-toggle-btn" aria-label="Attiva Audio" data-video-target="secondaryVideo">
-                        <i class="fa-solid fa-volume-xmark"></i> Audio
-                    </button>
-                    <video id="secondaryVideo" autoplay loop muted playsinline crossorigin="anonymous" class="video-large" poster="https://res.cloudinary.com/dtao2wba5/video/upload/f_auto,q_auto/v1773504689/WhatsApp_Video_2026-03-12_at_21.01.50_2_vgzuh8.jpg" preload="metadata">
-                        <source src="https://res.cloudinary.com/dtao2wba5/video/upload/f_auto,q_auto/v1773504689/WhatsApp_Video_2026-03-12_at_21.01.50_2_vgzuh8.mp4" type="video/mp4">
-                        Il tuo browser non supporta i video HTML5.
-                    </video>
+        <!-- Sezione Prezzi -->
+        <section id="prezzi" class="section section-light">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="eyebrow">I Nostri Prezzi</span>
+                    <h2 class="section-title">Acquista l'Olio Santa Venere</h2>
+                    <p class="section-subtitle">Prezzi chiari e trasparenti. **Nel prezzo è inclusa la latta protettiva in alluminio e la spedizione**.</p>
+                </div>
+                
+                <div class="prezzi-layout reveal">
+                    <!-- Colonna Schede Prezzo -->
+                    <div class="pricing-cards-container">
+                        <!-- Card 1 -->
+                        <div class="pricing-card">
+                            <div class="pricing-card-header">
+                                <span class="badge-shipping">Spedizione & Latta incluse</span>
+                                <h3 class="product-title">Bottiglia Olio</h3>
+                                <div class="product-volume">0.75 Litri</div>
+                            </div>
+                            <div class="product-price">15€</div>
+                            <ul class="product-details">
+                                <li><i class="fa-solid fa-circle-check"></i> Bottiglia in vetro premium</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Olio Extra Vergine di Oliva</li>
+                                <li><i class="fa-solid fa-circle-check"></i> 100% Naturale e Artigianale</li>
+                            </ul>
+                            <a href="https://wa.me/393514470333?text=Ciao!%20Vorrei%20ordinare%20la%20bottiglia%20da%200.75L" target="_blank" class="btn btn-pricing-wa">
+                                <i class="fa-brands fa-whatsapp"></i> Ordina su WhatsApp
+                            </a>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="pricing-card highlighted">
+                            <div class="pricing-card-header">
+                                <span class="badge-shipping">Spedizione & Latta incluse</span>
+                                <span class="badge-popular">Più Venduto</span>
+                                <h3 class="product-title">Latta Olio</h3>
+                                <div class="product-volume">3 Litri</div>
+                            </div>
+                            <div class="product-price">48€</div>
+                            <ul class="product-details">
+                                <li><i class="fa-solid fa-circle-check"></i> Latta protettiva in alluminio</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Olio Extra Vergine di Oliva</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Perfetto per l'uso quotidiano</li>
+                            </ul>
+                            <a href="https://wa.me/393514470333?text=Ciao!%20Vorrei%20ordinare%20la%20latta%20da%203L" target="_blank" class="btn btn-pricing-wa">
+                                <i class="fa-brands fa-whatsapp"></i> Ordina su WhatsApp
+                            </a>
+                        </div>
+                        
+                        <!-- Card 3 -->
+                        <div class="pricing-card">
+                            <div class="pricing-card-header">
+                                <span class="badge-shipping">Spedizione & Latta incluse</span>
+                                <h3 class="product-title">Latta Olio</h3>
+                                <div class="product-volume">5 Litri</div>
+                            </div>
+                            <div class="product-price">75€</div>
+                            <ul class="product-details">
+                                <li><i class="fa-solid fa-circle-check"></i> Latta protettiva in alluminio</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Olio Extra Vergine di Oliva</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Scorta convenienza famiglia</li>
+                            </ul>
+                            <a href="https://wa.me/393514470333?text=Ciao!%20Vorrei%20ordinare%20la%20latta%20da%205L" target="_blank" class="btn btn-pricing-wa">
+                                <i class="fa-brands fa-whatsapp"></i> Ordina su WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Colonna Immagine Volantino Prezzi -->
+                    <div class="pricing-flyer-container">
+                        <div class="flyer-card">
+                            <img src="prezzi-olio.jpeg" alt="Listino Prezzi Olio Santa Venere" class="flyer-img">
+                            <div class="flyer-caption">
+                                <p><i class="fa-solid fa-circle-check"></i> Latta e Spedizione sempre incluse nel prezzo!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
