@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Link alla sitemap
+Sitemap: https://oliosantavenere.netlify.app/sitemap.xml
