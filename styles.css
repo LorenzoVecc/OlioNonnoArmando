@@ -983,12 +983,30 @@ footer {
 
     /* Video & Cards Mobile Optimization Custom */
     .pricing-cards-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding: 1rem 1.5rem 2.5rem 1.5rem;
+        margin: 0 -1.5rem 1rem -1.5rem;
+        gap: 1.2rem;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+    }
+    
+    .pricing-cards-container::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+
+    .pricing-card {
+        flex: 0 0 285px;
+        scroll-snap-align: center;
+        margin: 0;
+        box-shadow: 0 10px 25px rgba(43, 58, 32, 0.05);
     }
 
     .prezzi-layout {
-        gap: 2.5rem;
+        gap: 2rem;
     }
 
     /* Extra Mobile Specific Overrides */
@@ -1052,6 +1070,77 @@ footer {
 /* ==========================================================================
    STORY INFOGRAPHIC & PRICING LAYOUT
    ========================================================================== */
+.pricing-promo-banner {
+    max-width: 900px;
+    margin: 1.5rem auto 3rem auto;
+    background: linear-gradient(135deg, rgba(43, 58, 32, 0.02) 0%, rgba(201, 162, 39, 0.05) 100%);
+    border: 1px solid rgba(201, 162, 39, 0.2);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(43, 58, 32, 0.01);
+}
+
+@media (min-width: 768px) {
+    .pricing-promo-banner {
+        flex-direction: row;
+        padding: 1.2rem 3rem;
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+.promo-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.promo-icon {
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    border: 1.5px solid rgba(201, 162, 39, 0.25);
+    color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.02);
+}
+
+.promo-text {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.promo-text strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.promo-divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(201, 162, 39, 0.15);
+}
+
+@media (min-width: 768px) {
+    .promo-divider {
+        width: 1px;
+        height: 40px;
+    }
+}
+
 .storia-img {
     width: 100%;
     height: auto;
