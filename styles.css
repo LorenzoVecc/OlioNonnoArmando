@@ -1464,3 +1464,71 @@ footer {
         padding-bottom: 85px !important;
     }
 }
+
+/* ==========================================================================
+   ORGANOLEPTIC SPECS STYLES
+   ========================================================================== */
+.organoleptic-specs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(43, 58, 32, 0.08);
+}
+
+@media (min-width: 600px) {
+    .organoleptic-specs {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+.spec-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(43, 58, 32, 0.03);
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    border-left: 3px solid var(--accent-color);
+    transition: transform var(--transition-s), box-shadow var(--transition-s);
+}
+
+.spec-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(43, 58, 32, 0.04);
+}
+
+.spec-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.spec-details {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+.spec-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.spec-value {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0.1rem 0;
+}
+
+.spec-desc {
+    font-size: 0.8rem;
+    color: rgba(51, 49, 46, 0.6);
+}
