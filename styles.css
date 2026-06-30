@@ -1407,3 +1407,60 @@ footer {
         transform: translateY(20px); /* Ridotta la distanza di movimento */
     }
 }
+
+/* ==========================================================================
+   MOBILE STICKY CTA STYLES
+   ========================================================================== */
+.mobile-sticky-cta {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-sticky-cta {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(250, 249, 246, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 0.8rem 1.5rem;
+        box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.08);
+        z-index: 2000;
+        border-top: 1px solid rgba(201, 162, 39, 0.2);
+        box-sizing: border-box;
+    }
+    
+    .btn-mobile-sticky {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        background-color: var(--wa-color);
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        width: 100%;
+        transition: background-color var(--transition-s), transform 0.1s ease;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .btn-mobile-sticky:active {
+        background-color: var(--wa-color-hover);
+        transform: scale(0.98);
+    }
+    
+    .floating-whatsapp {
+        display: none !important;
+    }
+    
+    body {
+        padding-bottom: 85px !important;
+    }
+}
